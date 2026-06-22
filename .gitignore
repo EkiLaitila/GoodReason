@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.uv/
+
+# OS
+.DS_Store
+
+# Internal / non-shared reference material (kept on disk, not version-controlled)
+internal-docs/
+docs/compatibility.md
+
+# Authoring provenance (intermediate per-sector inputs, content already merged into the model)
+specializations/iran-war/build/

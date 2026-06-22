@@ -1,0 +1,723 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://goodreason.fi/schemas/super-goodreason-model.schema.json",
+  "title": "SuperGoodReasonModel Schema",
+  "description": "JSON Schema for the GoodReason Super model: an α–Ω systemic configurator for AI-assisted synthesis, axiomatic reasoning, methodological demonstration, and transdisciplinary systems inquiry.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "sectors",
+    "circles"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    },
+    "sectors": {
+      "$ref": "#/$defs/sectors"
+    },
+    "sector_metadata": {
+      "type": "object",
+      "description": "Optional sector-specific metadata, currently used for selected axes such as π and χ.",
+      "additionalProperties": {
+        "$ref": "#/$defs/sectorMetadata"
+      },
+      "propertyNames": {
+        "enum": [
+          "α",
+          "π",
+          "χ",
+          "Δψ",
+          "β",
+          "φ",
+          "τ",
+          "Ω"
+        ]
+      }
+    },
+    "circles": {
+      "type": "array",
+      "description": "Seven depth circles / consciousness levels that provide the polar-depth coordinate logic for the whole model.",
+      "minItems": 7,
+      "maxItems": 8,
+      "items": {
+        "$ref": "#/$defs/circle"
+      }
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "urlString": {
+      "type": "string",
+      "format": "uri"
+    },
+    "axisSymbol": {
+      "type": "string",
+      "enum": [
+        "α",
+        "π",
+        "χ",
+        "Δψ",
+        "β",
+        "φ",
+        "τ",
+        "Ω"
+      ]
+    },
+    "axisTextMapLowerDelta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "α",
+        "π",
+        "χ",
+        "Δψ",
+        "β",
+        "φ",
+        "τ",
+        "Ω"
+      ],
+      "properties": {
+        "α": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "π": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "χ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "Δψ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "β": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "φ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "τ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "Ω": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Top-level identity, authorship, purpose, methodological backbone and assumptions of the SuperGoodReasonModel.",
+      "additionalProperties": true,
+      "required": [
+        "model",
+        "version",
+        "language",
+        "author",
+        "purpose"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "const": "SuperGoodReasonModel"
+        },
+        "version": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "source_language": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "language": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "author": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "created_for": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "purpose": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "methodological_backbone": {
+          "type": "object",
+          "description": "χ1–χ7 methodological backbone from source material to collective intelligence.",
+          "additionalProperties": false,
+          "required": [
+            "χ1",
+            "χ2",
+            "χ3",
+            "χ4",
+            "χ5",
+            "χ6",
+            "χ7"
+          ],
+          "properties": {
+            "χ1": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "χ2": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "χ3": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "χ4": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "χ5": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "χ6": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "χ7": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          }
+        },
+        "core_assumptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
+    "sectorMetadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "model",
+        "version",
+        "language",
+        "purpose",
+        "axis",
+        "axis_role"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "const": "SuperGoodReasonModel"
+        },
+        "version": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "language": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "source_language": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "author": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "purpose": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "article_context": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "axis": {
+          "$ref": "#/$defs/axisSymbol"
+        },
+        "axis_role": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "sectors": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "α",
+        "π",
+        "χ",
+        "Δψ",
+        "β",
+        "φ",
+        "τ",
+        "Ω"
+      ],
+      "properties": {
+        "α": {
+          "$ref": "#/$defs/alphaSector"
+        },
+        "π": {
+          "$ref": "#/$defs/piSector"
+        },
+        "χ": {
+          "$ref": "#/$defs/chiSector"
+        },
+        "Δψ": {
+          "$ref": "#/$defs/deltaPsiSector"
+        },
+        "β": {
+          "$ref": "#/$defs/betaSector"
+        },
+        "φ": {
+          "$ref": "#/$defs/phiSector"
+        },
+        "τ": {
+          "$ref": "#/$defs/tauSector"
+        },
+        "Ω": {
+          "$ref": "#/$defs/omegaSector"
+        }
+      }
+    },
+    "sectorArray": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7
+    },
+    "alphaSector": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorArray"
+        }
+      ],
+      "items": {
+        "$ref": "#/$defs/alphaEntry"
+      }
+    },
+    "piSector": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorArray"
+        }
+      ],
+      "items": {
+        "$ref": "#/$defs/piEntry"
+      }
+    },
+    "chiSector": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorArray"
+        }
+      ],
+      "items": {
+        "$ref": "#/$defs/chiEntry"
+      }
+    },
+    "deltaPsiSector": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorArray"
+        }
+      ],
+      "items": {
+        "$ref": "#/$defs/deltaPsiEntry"
+      }
+    },
+    "betaSector": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorArray"
+        }
+      ],
+      "items": {
+        "$ref": "#/$defs/betaEntry"
+      }
+    },
+    "phiSector": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorArray"
+        }
+      ],
+      "items": {
+        "$ref": "#/$defs/phiEntry"
+      }
+    },
+    "tauSector": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorArray"
+        }
+      ],
+      "items": {
+        "$ref": "#/$defs/tauEntry"
+      }
+    },
+    "omegaSector": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorArray"
+        }
+      ],
+      "items": {
+        "$ref": "#/$defs/omegaEntry"
+      }
+    },
+    "sectorEntryCommon": {
+      "type": "object",
+      "description": "Common structure for one α–Ω position, such as π5 or Ω6. Each entry includes the local identity of the position and eight cross-perspective interpretations.",
+      "additionalProperties": false,
+      "required": [
+        "symbol",
+        "class",
+        "title",
+        "α",
+        "π",
+        "χ",
+        "Δψ",
+        "β",
+        "φ",
+        "τ",
+        "Ω"
+      ],
+      "properties": {
+        "symbol": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "class": {
+          "$ref": "#/$defs/axisSymbol"
+        },
+        "level_name": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "summary": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "mode": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "α": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "π": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "χ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "Δψ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "β": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "φ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "τ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "Ω": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "identity_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "objectivity_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "feedback_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "failure_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "hard_soft_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "second_order_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "emancipatory_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "change_management_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "vsm_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "design_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "implementation_note": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "methodological_use": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "info": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/urlString"
+            },
+            {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          ]
+        }
+      }
+    },
+    "alphaEntry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorEntryCommon"
+        },
+        {
+          "type": "object",
+          "required": [
+            "symbol",
+            "class",
+            "mode",
+            "identity_note",
+            "hard_soft_note",
+            "second_order_note"
+          ],
+          "properties": {
+            "symbol": {
+              "pattern": "^α[1-7]$"
+            },
+            "class": {
+              "const": "α"
+            }
+          }
+        }
+      ]
+    },
+    "piEntry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorEntryCommon"
+        },
+        {
+          "type": "object",
+          "required": [
+            "symbol",
+            "class",
+            "level_name",
+            "summary",
+            "methodological_use"
+          ],
+          "properties": {
+            "symbol": {
+              "pattern": "^π[1-7]$"
+            },
+            "class": {
+              "const": "π"
+            }
+          }
+        }
+      ]
+    },
+    "chiEntry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorEntryCommon"
+        },
+        {
+          "type": "object",
+          "required": [
+            "symbol",
+            "class",
+            "level_name",
+            "summary",
+            "methodological_use"
+          ],
+          "properties": {
+            "symbol": {
+              "pattern": "^χ[1-7]$"
+            },
+            "class": {
+              "const": "χ"
+            }
+          }
+        }
+      ]
+    },
+    "deltaPsiEntry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorEntryCommon"
+        },
+        {
+          "type": "object",
+          "required": [
+            "symbol",
+            "class",
+            "mode",
+            "objectivity_note",
+            "failure_note",
+            "hard_soft_note",
+            "emancipatory_note"
+          ],
+          "properties": {
+            "symbol": {
+              "pattern": "^Δψ[1-7]$"
+            },
+            "class": {
+              "const": "Δψ"
+            }
+          }
+        }
+      ]
+    },
+    "betaEntry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorEntryCommon"
+        },
+        {
+          "type": "object",
+          "required": [
+            "symbol",
+            "class",
+            "mode",
+            "failure_note",
+            "vsm_note"
+          ],
+          "properties": {
+            "symbol": {
+              "pattern": "^β[1-7]$"
+            },
+            "class": {
+              "const": "β"
+            }
+          }
+        }
+      ]
+    },
+    "phiEntry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorEntryCommon"
+        },
+        {
+          "type": "object",
+          "required": [
+            "symbol",
+            "class",
+            "mode",
+            "failure_note",
+            "design_note"
+          ],
+          "properties": {
+            "symbol": {
+              "pattern": "^φ[1-7]$"
+            },
+            "class": {
+              "const": "φ"
+            }
+          }
+        }
+      ]
+    },
+    "tauEntry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorEntryCommon"
+        },
+        {
+          "type": "object",
+          "required": [
+            "symbol",
+            "class",
+            "mode",
+            "failure_note",
+            "implementation_note"
+          ],
+          "properties": {
+            "symbol": {
+              "pattern": "^τ[1-7]$"
+            },
+            "class": {
+              "const": "τ"
+            }
+          }
+        }
+      ]
+    },
+    "omegaEntry": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/sectorEntryCommon"
+        },
+        {
+          "type": "object",
+          "required": [
+            "symbol",
+            "class",
+            "mode",
+            "feedback_note",
+            "hard_soft_note",
+            "second_order_note"
+          ],
+          "properties": {
+            "symbol": {
+              "pattern": "^Ω[1-7]$"
+            },
+            "class": {
+              "const": "Ω"
+            }
+          }
+        }
+      ]
+    },
+    "circle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "meta",
+        "α",
+        "π",
+        "χ",
+        "Δψ",
+        "β",
+        "φ",
+        "τ",
+        "Ω"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[1-8]$"
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "meta": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "α": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "π": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "χ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "Δψ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "β": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "φ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "τ": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "Ω": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    }
+  }
+}
