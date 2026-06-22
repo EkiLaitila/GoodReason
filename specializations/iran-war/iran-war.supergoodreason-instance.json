@@ -1,0 +1,997 @@
+{
+  "$schema": "https://goodreason.fi/schemas/supergoodreason-instance/v0.1",
+  "conformsTo": {
+    "model": "SuperGoodReasonModel",
+    "version": "0.1-en-integrated",
+    "author": "Eki Laitila",
+    "schema": "https://goodreason.fi/schemas/super-goodreason-model.schema.json",
+    "relationship": "domain specialization + application extension",
+    "note": "This is an applied instance built on Eki Laitila's SuperGoodReasonModel. The grammar (8 sectors, 7 levels/circles, semantic anchors) and the circle-depth coordinate conform to his canonical model; the nodes, interactions and the unify operation specialize and extend it for one System of Interest."
+  },
+  "metadata": {
+    "model": "SuperGoodReasonModel-instance",
+    "title": "The 2026 Iran War — applied SuperGoodReason instance",
+    "version": "0.2-iran",
+    "language": "en",
+    "author": "Ville Laitila (specialization of Eki Laitila's SuperGoodReasonModel)",
+    "created_for": "Axiomatic Systems Science – Geometry of Thinking (application)",
+    "date": "2026-06-13",
+    "purpose": "A worked, source-verified application of the SuperGoodReasonModel to one System of Interest, with the unify(S,J,C)->R operation demonstrated.",
+    "derivedFrom": "GoodReason alpha-omega deep-research report 2026-06-13 (25 claims source-verified: 21 confirmed, 4 partial, 0 refuted; 24 sources). 56 nodes shared verbatim with the goodreason-iran-war 3D cube.",
+    "methodological_backbone": {
+      "χ1": "SOI = the 2026 Iran war; primary sources (IAEA, ACLED, ISIS, UK Parliament)",
+      "χ2": "Metasystemic view: Iranian, Israeli, US and non-aligned frames side by side",
+      "χ3": "Guiding prompt: the GoodReason alpha-omega method specification steering the AI synthesis",
+      "χ4": "Metadiscipline: a communicable alpha-omega reading transmissible to policymakers",
+      "χ5": "Cognitive integration: cross-source synthesis, 28-pair interaction analysis",
+      "χ6": "Axiomatic configuration: this SuperJSON instance and the 3D GoodReason cube",
+      "χ7": "Collective intelligence: shared verified knowledge for the observer community"
+    },
+    "core_assumptions": [
+      "Conforms to Eki Laitila's SuperGoodReasonModel: 8 sectors, 7 levels, level 7 deliberately open (worldview).",
+      "alpha and Omega carry two modes — researcher identity and object/system identity (second-order science).",
+      "Delta-psi is objective change pressure including failure, collapse and survival thresholds.",
+      "beta, phi, tau and Delta-psi carry failure conditions (failure realism); the cube's pathology layer instances these.",
+      "The chi axis is the methodological backbone; this instance's own production traversed chi1->chi7.",
+      "The model is AI-readable: the unify operation below is executable against the node base."
+    ],
+    "lenses_adopted_from_canonical_model": [
+      "second_order (reflexive alpha/Omega: researcher vs object) — see binding.reflexive",
+      "vsm_note (beta ladder mapped to Viable System Model S1-S5) — see nodes beta.2..beta.6",
+      "ecological scale (tau ladder: service->micro->meso->exo->macro->life-cycle->worldview) — see nodes tau.*",
+      "emancipatory_note (Delta-psi: who bears the cost) — see nodes deltapsi.* and circles",
+      "failure realism (failure conditions) — see cube pathology layer"
+    ]
+  },
+  "system": {
+    "soi": "The 2026 war between the United States and Israel and Iran, including their allied and proxy actors",
+    "moi": {
+      "observer": "Senior policymakers and authoritative experts with capacity to influence the war's course and global politics",
+      "stakes": "Escalation to regional or great-power war; nuclear breakout or program destruction; Strait of Hormuz and energy-market disruption; humanitarian consequences; realignment of the regional order; credibility of deterrence and international law",
+      "decision": "Which de-escalation off-ramps, deterrence postures and diplomatic instruments remain viable over the next 6-24 months, and which observable indicators should trigger which responses"
+    },
+    "binding": {
+      "comment": "The contextual end of the semantic anchors: what each symbol means in THIS system.",
+      "alpha": "War aims (regime change, program destruction) vs regime survival and succession legitimacy",
+      "pi": "Theories of victory under field test: decapitation (falsified), coercive diplomacy (provisional), deterrence-by-denial (unverifiable)",
+      "chi": "The contested fact base and the methodological backbone that produced it",
+      "deltapsi": "Escalation dynamics: rupture of 28 Feb, blockade, June relapse, signature window",
+      "beta": "Coalition / theocracy / IRGC / Pakistan mediation / Gulf platform — read as a VSM",
+      "phi": "The draft MoU and the off-ramp instrument set",
+      "tau": "Implementation across ecological scales: signature, reopening, sequencing, IAEA re-entry",
+      "omega": "Broken and working feedback: IAEA blind since 28 Feb; radiation, shipping data, hotline functioning",
+      "reflexive": {
+        "comment": "Second-order science (adopted from Eki's two-mode alpha/Omega).",
+        "alpha_researcher": "The analyst's purpose: serve the observer's decision with verified, falsifiable, multi-perspective analysis — not advocacy.",
+        "alpha_object": "The war's own purposes: the belligerents' aims as analyzed above.",
+        "omega_researcher": "Feedback revising the analyst: the goal-revision (question shifted to 'how does the deal survive 60 days') and the caught false-refutation are researcher-side Omega.",
+        "omega_object": "Feedback revealing the war: viability, collapse, legitimacy of the deal."
+      }
+    },
+    "timestamp": "2026-06-13",
+    "epistemicStatus": "Single-day snapshot; structural layers age in weeks, current-state details in days"
+  },
+  "circles": [
+    {
+      "id": "1",
+      "title": "Stability",
+      "meta": "The pre-war / desired condition: deterrence and containment as routine.",
+      "α": "Aims are stable: deterrence, containment, energy security as routine goals.",
+      "π": "Known doctrines apply; the rules of the regional game are understood.",
+      "χ": "The picture changes slowly; IAEA baselines and inspections hold.",
+      "Δψ": "Deviations are small and correctable through diplomacy.",
+      "β": "Clear state hierarchies and chains of command.",
+      "φ": "Proven instruments: sanctions, negotiation, inspection.",
+      "τ": "Routine implementation: inspections, transits, talks.",
+      "Ω": "Feedback reinforces the status quo."
+    },
+    {
+      "id": "2",
+      "title": "Manageable Uncertainty",
+      "meta": "Labile but analyzable: anticipation still possible.",
+      "α": "Purpose is to reduce uncertainty through understanding the adversary.",
+      "π": "Reasoning and intelligence analysis support decisions.",
+      "χ": "The environment varies (enrichment creeps up) but can be modelled.",
+      "Δψ": "Pressure requires active monitoring of thresholds.",
+      "β": "Structures flex: negotiating tracks open and close.",
+      "φ": "Solutions are adaptive: phased pressure, conditional offers.",
+      "τ": "Action is reactive but controlled.",
+      "Ω": "Feedback guides adjustment of posture."
+    },
+    {
+      "id": "3",
+      "title": "Complexity",
+      "meta": "Non-linear: a new paradigm begins to appear.",
+      "α": "Purpose is to find direction as aims collide non-linearly.",
+      "π": "The decapitation paradigm becomes visible — and questionable.",
+      "χ": "The environment is dynamic and interactive; facts contested.",
+      "Δψ": "Tension arises from unpredictability and proxy activation.",
+      "β": "Structure is networked: coalitions, proxies, mediators.",
+      "φ": "Solutions emerge through experimentation, not blueprint.",
+      "τ": "Implementation is adaptive and improvised.",
+      "Ω": "Feedback helps identify what is actually working."
+    },
+    {
+      "id": "4",
+      "title": "Independent Agency",
+      "meta": "Mature agency: the paradigm is under conscious consideration.",
+      "α": "Purpose is to act consistently on chosen principles after decapitation failed.",
+      "π": "The theory of victory is evaluated critically and openly.",
+      "χ": "The war is seen as a whole, not a sequence of incidents.",
+      "Δψ": "The challenge is bearing responsibility at the adaptation threshold.",
+      "β": "Structure supports autonomy — and exposes the IRGC's autonomous action.",
+      "φ": "Solutions are principle-guided: the dual-victory deal architecture.",
+      "τ": "Implementation is conscious and accountable.",
+      "Ω": "Feedback strengthens the parties' identities and red lines."
+    },
+    {
+      "id": "5",
+      "title": "Emergence",
+      "meta": "New properties and possibilities begin to arise.",
+      "α": "Purpose is to use emerging potential: a negotiated post-war order.",
+      "π": "A new synthesis (attrition + mediation) produces added value.",
+      "χ": "The environment enables new alignments (Pakistan, Gulf, G7).",
+      "Δψ": "Success is not guaranteed; transformation may develop or devolve.",
+      "β": "Structure supports innovation: new mediation and guarantee layers.",
+      "φ": "Solutions are creative and integrative across tracks.",
+      "τ": "Implementation is experimental: first convoys, first inspections.",
+      "Ω": "Feedback reveals whether the potential is fulfilled."
+    },
+    {
+      "id": "6",
+      "title": "Disruption",
+      "meta": "Pressure-driven transition; the boundary of configuration.",
+      "α": "Purpose is to preserve viability through the signature window.",
+      "π": "The turning point reveals the limits of the old model (force-first).",
+      "χ": "The environment sets strict conditions: blockade, broken verification.",
+      "Δψ": "Disruptive pressure demands rapid adaptation — recover or collapse.",
+      "β": "Structure is reorganized: succession, IRGC ascendancy.",
+      "φ": "Solutions change basic structures: the deal as reordering instrument.",
+      "τ": "Implementation becomes crisis-management under fire.",
+      "Ω": "Feedback guides structural and operational correction — where it still works."
+    },
+    {
+      "id": "7",
+      "title": "Reflection and Worldview",
+      "meta": "Meaning, values, and holistic worldview.",
+      "α": "Purpose is judged by what is sustainable and meaningful: survival vs supremacy.",
+      "π": "Philosophy of science and ethics become central: force vs knowledge.",
+      "χ": "The war is seen as part of a broader civilizational and historical whole.",
+      "Δψ": "The challenge is acceptability, responsibility, and acknowledging failure.",
+      "β": "Structure reflects values: the ethical regulator over the war machine.",
+      "φ": "Solutions are normative: durable, fair public verification infrastructure.",
+      "τ": "Action expresses a worldview: peace as continuously implemented practice.",
+      "Ω": "Feedback is coherence between actions, values, and the collective future."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "alpha.1",
+      "symbol": "alpha",
+      "greek": "α",
+      "ring": 1,
+      "circle": "Stability",
+      "level_title": "Actor & motive",
+      "statement": "α1 (Actor: subject–object relation). The first purpose: an actor recognizes the war as a System of Interest and directs intent at it — the US and Israel toward regime change, Iran toward survival."
+    },
+    {
+      "id": "pi.1",
+      "symbol": "pi",
+      "greek": "π",
+      "ring": 1,
+      "circle": "Stability",
+      "level_title": "Language",
+      "statement": "π1 (Language). The war is first made shareable through naming: 'decapitation', 'preemption', 'aggression', 'self-defence' — labels that fix meaning before any theory is built."
+    },
+    {
+      "id": "chi.1",
+      "symbol": "chi",
+      "greek": "χ",
+      "ring": 1,
+      "circle": "Stability",
+      "level_title": "SOI / connection",
+      "statement": "χ1 (Connection). The war is made visible as a bounded System of Interest with primary sources — IAEA reports, conflict-event data — connecting thought to the target."
+    },
+    {
+      "id": "deltapsi.1",
+      "symbol": "deltapsi",
+      "greek": "Δψ",
+      "ring": 1,
+      "circle": "Stability",
+      "level_title": "Early signal",
+      "statement": "Δψ1 (Sensitivity). The first detectable disturbance: the February diplomatic collapse as a weak signal. Ignored signals let small errors accumulate toward instability."
+    },
+    {
+      "id": "beta.1",
+      "symbol": "beta",
+      "greek": "β",
+      "ring": 1,
+      "circle": "Stability",
+      "level_title": "Minimal unit",
+      "statement": "β1 (Module: minimal viable structure). The smallest acting element — a single strike cell, a single negotiating channel — below which no coordination can compensate."
+    },
+    {
+      "id": "phi.1",
+      "symbol": "phi",
+      "greek": "φ",
+      "ring": 1,
+      "circle": "Stability",
+      "level_title": "Instrument",
+      "statement": "φ1 (Instrument: tool). A single concrete move that advances things without optimization — a ceasefire phone call, one off-ramp gesture."
+    },
+    {
+      "id": "tau.1",
+      "symbol": "tau",
+      "greek": "τ",
+      "ring": 1,
+      "circle": "Stability",
+      "level_title": "Direct service",
+      "statement": "τ1 (Service: demand-driven practice). Implementation as a direct act: one inspector flight, one convoy — execution without evaluation. Misread the need and it produces activity without value."
+    },
+    {
+      "id": "omega.1",
+      "symbol": "omega",
+      "greek": "Ω",
+      "ring": 1,
+      "circle": "Stability",
+      "level_title": "Reaction",
+      "statement": "Ω1 (Reaction: single feedback). The working immediate sensors — ship-transit counts, radiation readings — whose first response confirms or weakens the initial orientation."
+    },
+    {
+      "id": "alpha.2",
+      "symbol": "alpha",
+      "greek": "α",
+      "ring": 2,
+      "circle": "Manageable Uncertainty",
+      "level_title": "Object purpose",
+      "statement": "α2 (Object: environment & pragmatic meaning). The war's own apparent purpose, read against the regional system — where each actor's stated aim begins to diverge from its real one."
+    },
+    {
+      "id": "pi.2",
+      "symbol": "pi",
+      "greek": "π",
+      "ring": 2,
+      "circle": "Manageable Uncertainty",
+      "level_title": "Reasoning",
+      "statement": "π2 (Reasoning). The war made traceable: the if-strike-then-collapse logic laid out as explicit, repeatable steps that can be checked for a missing condition."
+    },
+    {
+      "id": "chi.2",
+      "symbol": "chi",
+      "greek": "χ",
+      "ring": 2,
+      "circle": "Manageable Uncertainty",
+      "level_title": "Metasystemic view",
+      "statement": "χ2 (Conversion). The same war converted into a higher-order view — seen simultaneously through Iranian, Israeli, US and non-aligned frames rather than one description."
+    },
+    {
+      "id": "deltapsi.2",
+      "symbol": "deltapsi",
+      "greek": "Δψ",
+      "ring": 2,
+      "circle": "Manageable Uncertainty",
+      "level_title": "Buffering",
+      "statement": "Δψ2 (Dynamics: buffering). Variation consuming reserves: 99 days of Hormuz closure draining capital, trust and ecological capacity. Emancipatory question — whose reserves are spent, who pays the cost."
+    },
+    {
+      "id": "beta.2",
+      "symbol": "beta",
+      "greek": "β",
+      "ring": 2,
+      "circle": "Manageable Uncertainty",
+      "level_title": "Operations · S1",
+      "statement": "β2 (Resource — VSM System 1). The operational units performing primary action: the IRGC, the IDF, US CENTCOM, each within its responsibility area, each a potential bottleneck."
+    },
+    {
+      "id": "phi.2",
+      "symbol": "phi",
+      "greek": "φ",
+      "ring": 2,
+      "circle": "Manageable Uncertainty",
+      "level_title": "Design frame",
+      "statement": "φ2 (Context: investments & expectations). The constraints any solution must fit — collapsed sanctions, the blockade, frozen assets — that frame what a deal can even be."
+    },
+    {
+      "id": "tau.2",
+      "symbol": "tau",
+      "greek": "τ",
+      "ring": 2,
+      "circle": "Manageable Uncertainty",
+      "level_title": "Microsystem",
+      "statement": "τ2 (Microsystem: individual delivery). The single case served well: one tanker safely transited, one inspection completed — efficient in general can still be wrong for the case."
+    },
+    {
+      "id": "omega.2",
+      "symbol": "omega",
+      "greek": "Ω",
+      "ring": 2,
+      "circle": "Manageable Uncertainty",
+      "level_title": "Reflection",
+      "statement": "Ω2 (Reflection: value adjustment). Feedback that revises not just action but the criteria — and, reflexively, the analyst's own interpretation, not only the war's behavior."
+    },
+    {
+      "id": "alpha.3",
+      "symbol": "alpha",
+      "greek": "α",
+      "ring": 3,
+      "circle": "Complexity",
+      "level_title": "Purpose tension",
+      "statement": "α3 (Context: initial situation & tension). The collision becomes contextual: regime-change versus regime-survival cannot be split, and the unresolved tension now steers every negotiation."
+    },
+    {
+      "id": "pi.3",
+      "symbol": "pi",
+      "greek": "π",
+      "ring": 3,
+      "circle": "Complexity",
+      "level_title": "Argumentation",
+      "statement": "π3 (Argumentation: axiomatic grounding). The unproven premises each theory of victory rests on become visible — and competing axioms produce opposite readings of the same strike."
+    },
+    {
+      "id": "chi.3",
+      "symbol": "chi",
+      "greek": "χ",
+      "ring": 3,
+      "circle": "Complexity",
+      "level_title": "Guiding prompt · cyber",
+      "statement": "χ3 (Cyber: control / guiding model). The GoodReason method spec and AI research prompt that deliberately steer the synthesis — the war's analysis is consciously controlled, not neutral."
+    },
+    {
+      "id": "deltapsi.3",
+      "symbol": "deltapsi",
+      "greek": "Δψ",
+      "ring": 3,
+      "circle": "Complexity",
+      "level_title": "Criticality",
+      "statement": "Δψ3 (Criticality: anomaly & paradigm pressure). The succession that did not collapse the regime is an anomaly the decapitation paradigm cannot absorb; denied, it becomes defensive repetition."
+    },
+    {
+      "id": "beta.3",
+      "symbol": "beta",
+      "greek": "β",
+      "ring": 3,
+      "circle": "Complexity",
+      "level_title": "Coordination · S2",
+      "statement": "β3 (Coordination — VSM System 2). Pakistan's mediation as the mechanism reducing oscillation and conflict between belligerents who cannot speak directly."
+    },
+    {
+      "id": "phi.3",
+      "symbol": "phi",
+      "greek": "φ",
+      "ring": 3,
+      "circle": "Complexity",
+      "level_title": "Solution concept",
+      "statement": "φ3 (Concept: expectation-based design). The dual-victory deal idea — one text both capitals can narrate as a win — formed before its architecture exists."
+    },
+    {
+      "id": "tau.3",
+      "symbol": "tau",
+      "greek": "τ",
+      "ring": 3,
+      "circle": "Complexity",
+      "level_title": "Mesosystem",
+      "statement": "τ3 (Mesosystem: networked distribution). Reopening as a delivery network — demining, insurance, crews, ports — where one disturbed node propagates through the whole chain."
+    },
+    {
+      "id": "omega.3",
+      "symbol": "omega",
+      "greek": "Ω",
+      "ring": 3,
+      "circle": "Complexity",
+      "level_title": "Negotiated feedback",
+      "statement": "Ω3 (Agreement system: agency). Feedback turns social: trust, compliance, renegotiation between autonomous actors — the deal depends on agreement holding across situations."
+    },
+    {
+      "id": "alpha.4",
+      "symbol": "alpha",
+      "greek": "α",
+      "ring": 4,
+      "circle": "Independent Agency",
+      "level_title": "Valid aims",
+      "statement": "α4 (Knowledge ground: epistemic identity). What counts as a legitimate war aim, and who is a credible author of one — sharpened once the nine-day succession refuted regime change as achievable."
+    },
+    {
+      "id": "pi.4",
+      "symbol": "pi",
+      "greek": "π",
+      "ring": 4,
+      "circle": "Independent Agency",
+      "level_title": "Doctrine",
+      "statement": "π4 (Discipline: doctrine & metacognition). Deterrence and coercive diplomacy applied as recognized doctrine — a teachable body whose internal logic is being tested against new cases."
+    },
+    {
+      "id": "chi.4",
+      "symbol": "chi",
+      "greek": "χ",
+      "ring": 4,
+      "circle": "Independent Agency",
+      "level_title": "Metadiscipline",
+      "statement": "χ4 (Communication). The verified analysis as transmissible competence — a communicable way of seeing the war, not merely a pile of facts."
+    },
+    {
+      "id": "deltapsi.4",
+      "symbol": "deltapsi",
+      "greek": "Δψ",
+      "ring": 4,
+      "circle": "Independent Agency",
+      "level_title": "Adapt or collapse",
+      "statement": "Δψ4 (Adaptation threshold — failure realism). The signature window: the system recovers, transforms, or the deal collapses into renewed war. Failure is a real outcome here — decline, loss of legitimacy, absorption — not an exception."
+    },
+    {
+      "id": "beta.4",
+      "symbol": "beta",
+      "greek": "β",
+      "ring": 4,
+      "circle": "Independent Agency",
+      "level_title": "Control · S3",
+      "statement": "β4 (Operational control — VSM System 3). Who turns decisions into reliable action — and the war's structural pathology: the IRGC striking US bases without unified S3 control during the endgame."
+    },
+    {
+      "id": "phi.4",
+      "symbol": "phi",
+      "greek": "φ",
+      "ring": 4,
+      "circle": "Independent Agency",
+      "level_title": "Deal architecture",
+      "statement": "φ4 (Architecture: system-level design). The full structure: reopen Hormuz, phase sanctions, release assets, defer the nuclear core to a 60-day track — sub-solutions that must fit without contradiction."
+    },
+    {
+      "id": "tau.4",
+      "symbol": "tau",
+      "greek": "τ",
+      "ring": 4,
+      "circle": "Independent Agency",
+      "level_title": "Exosystem",
+      "statement": "τ4 (Exosystem: open service chain). The cross-boundary chain — sanctions relief through banking corridors, assets through interfaces — that breaks between services even when each works locally."
+    },
+    {
+      "id": "omega.4",
+      "symbol": "omega",
+      "greek": "Ω",
+      "ring": 4,
+      "circle": "Independent Agency",
+      "level_title": "Conviction",
+      "statement": "Ω4 (Conviction: recovery from crisis). Feedback as a source of realism: the crisis exposes structural weakness and false assumptions, enabling a more durable posture."
+    },
+    {
+      "id": "alpha.5",
+      "symbol": "alpha",
+      "greek": "α",
+      "ring": 5,
+      "circle": "Emergence",
+      "level_title": "Anticipated purpose",
+      "statement": "α5 (Challenge: anticipation & vision). Future-facing aims: a settlement that lets each side claim victory, the vision of a post-war regional order not yet contained in the present."
+    },
+    {
+      "id": "pi.5",
+      "symbol": "pi",
+      "greek": "π",
+      "ring": 5,
+      "circle": "Emergence",
+      "level_title": "Relevance",
+      "statement": "π5 (Relevance: applied synthesis). Which combination of theories genuinely explains the war's course — did strikes bend Tehran, or 99 days of economic attrition? The synthesis that adds real value."
+    },
+    {
+      "id": "chi.5",
+      "symbol": "chi",
+      "greek": "χ",
+      "ring": 5,
+      "circle": "Emergence",
+      "level_title": "Cognitive integration",
+      "statement": "χ5 (Cognition). New understanding emerging across the whole source ecosystem — distinctions and questions no single report contained, arising from their interaction."
+    },
+    {
+      "id": "deltapsi.5",
+      "symbol": "deltapsi",
+      "greek": "Δψ",
+      "ring": 5,
+      "circle": "Emergence",
+      "level_title": "Develop or devolve",
+      "statement": "Δψ5 (Transformation). Succession as transformation with two directions: enough coherence and Iran develops a new order; too little and it fragments into devolution and exhaustion."
+    },
+    {
+      "id": "beta.5",
+      "symbol": "beta",
+      "greek": "β",
+      "ring": 5,
+      "circle": "Emergence",
+      "level_title": "Strategy · S4",
+      "statement": "β5 (Development strategy — VSM System 4). Environmental scanning and future-orientation: the deal itself as the system's bid to adapt rather than merely fight on."
+    },
+    {
+      "id": "phi.5",
+      "symbol": "phi",
+      "greek": "φ",
+      "ring": 5,
+      "circle": "Emergence",
+      "level_title": "Detailed design",
+      "statement": "φ5 (Detailed design: implementation plan). The sequencing detail — which sanction lifts after which verified step — where a beautiful strategy becomes a working or unreliable system."
+    },
+    {
+      "id": "tau.5",
+      "symbol": "tau",
+      "greek": "τ",
+      "ring": 5,
+      "circle": "Emergence",
+      "level_title": "Macrosystem",
+      "statement": "τ5 (Macrosystem: society as client). The war's structural effect on global energy and society — small errors becoming large consequences at scale."
+    },
+    {
+      "id": "omega.5",
+      "symbol": "omega",
+      "greek": "Ω",
+      "ring": 5,
+      "circle": "Emergence",
+      "level_title": "Reconciliation",
+      "statement": "Ω5 (Feedback system: reconciliation). Disappointment, critique and resistance treated as material for renewal — direction changed without collapse."
+    },
+    {
+      "id": "alpha.6",
+      "symbol": "alpha",
+      "greek": "α",
+      "ring": 6,
+      "circle": "Disruption",
+      "level_title": "Committed purpose",
+      "statement": "α6 (Concrete commitment: use, risk, scenario). Purpose under real, partly uncontrollable consequences: Mojtaba's signature as a first sovereign act whose fallout cannot be fully governed."
+    },
+    {
+      "id": "pi.6",
+      "symbol": "pi",
+      "greek": "π",
+      "ring": 6,
+      "circle": "Disruption",
+      "level_title": "Frontier",
+      "statement": "π6 (Frontier: limits of theory). Decapitation falsified in nine days — the point where existing models stop working and metatheoretical renewal becomes necessary."
+    },
+    {
+      "id": "chi.6",
+      "symbol": "chi",
+      "greek": "χ",
+      "ring": 6,
+      "circle": "Disruption",
+      "level_title": "Axiomatic configuration",
+      "statement": "χ6 (Configuration). The reusable artifacts — this SuperJSON specialization and the GoodReason cube — that encode the synthesis so it can spread and adapt beyond one analysis."
+    },
+    {
+      "id": "deltapsi.6",
+      "symbol": "deltapsi",
+      "greek": "Δψ",
+      "ring": 6,
+      "circle": "Disruption",
+      "level_title": "Radical renewal",
+      "statement": "Δψ6 (Radical renewal: disruption & reordering). The war as a break in the regional order; the force-first precedent it sets can liberate, exploit, or destroy shared capacity — assess critically."
+    },
+    {
+      "id": "beta.6",
+      "symbol": "beta",
+      "greek": "β",
+      "ring": 6,
+      "circle": "Disruption",
+      "level_title": "Mission · S5",
+      "statement": "β5→β6 (Mission: identity — VSM System 5). The regime's identity and policy apex — which in this war is an information black hole: a wounded, unseen Supreme Leader at the top of the chain."
+    },
+    {
+      "id": "phi.6",
+      "symbol": "phi",
+      "greek": "φ",
+      "ring": 6,
+      "circle": "Disruption",
+      "level_title": "Projected initiative",
+      "statement": "φ6 (Projecting: investment & timing). The 96-hour signature window as a timed transformative initiative — launched too early, too late, or without readiness, it consumes resources without creating a new reality."
+    },
+    {
+      "id": "tau.6",
+      "symbol": "tau",
+      "greek": "τ",
+      "ring": 6,
+      "circle": "Disruption",
+      "level_title": "Adaptive cycle",
+      "statement": "τ6 (Life cycle: adaptive cycles). Reading the war's phase — release and reorganization — so action fits; expand during decline or conserve during disruption and the system fails to renew."
+    },
+    {
+      "id": "omega.6",
+      "symbol": "omega",
+      "greek": "Ω",
+      "ring": 6,
+      "circle": "Disruption",
+      "level_title": "Metacybernetics",
+      "statement": "Ω6 (Metacybernetics: diagnostic feedback). The war's deepest wound — IAEA blind since 28 Feb — and, reflexively, the method auditing its own machinery: catching the infrastructure failure that had falsely reported all claims refuted."
+    },
+    {
+      "id": "alpha.7",
+      "symbol": "alpha",
+      "greek": "α",
+      "ring": 7,
+      "circle": "Reflection & Worldview",
+      "level_title": "Purpose worldview",
+      "statement": "α7 (Life cycle: philosophical reflection). Survival versus supremacy as civilizational orientations that outlast any treaty — and, second-order, the analyst's own purpose and responsibility in studying the war becomes part of the inquiry."
+    },
+    {
+      "id": "pi.7",
+      "symbol": "pi",
+      "greek": "π",
+      "ring": 7,
+      "circle": "Reflection & Worldview",
+      "level_title": "Philosophy",
+      "statement": "π7 (Philosophy of science). Force versus knowledge: coercion produced an agreement but destroyed the verification needed to keep it. Power can compel a signature; only truth can sustain one."
+    },
+    {
+      "id": "chi.7",
+      "symbol": "chi",
+      "greek": "χ",
+      "ring": 7,
+      "circle": "Reflection & Worldview",
+      "level_title": "Collective intelligence",
+      "statement": "χ7 (Collective intelligence: limits of growth). Shared, verified knowledge serving policymakers and the public — coordinated with sustainability and the common good against finite attention and capacity."
+    },
+    {
+      "id": "deltapsi.7",
+      "symbol": "deltapsi",
+      "greek": "Δψ",
+      "ring": 7,
+      "circle": "Reflection & Worldview",
+      "level_title": "Evolution & limits",
+      "statement": "Δψ7 (Worldview balance). A truthful worldview includes failure, civilian suffering, exclusion and decline as realities to be understood — holding change and continuity in tension while accepting finitude."
+    },
+    {
+      "id": "beta.7",
+      "symbol": "beta",
+      "greek": "β",
+      "ring": 7,
+      "circle": "Reflection & Worldview",
+      "level_title": "Ethical regulator",
+      "statement": "β7 (Vision: ethical regulator). Whether the war's conduct can withstand moral scrutiny — civilian toll, proportionality — so that success does not become destruction or loss of legitimacy."
+    },
+    {
+      "id": "phi.7",
+      "symbol": "phi",
+      "greek": "φ",
+      "ring": 7,
+      "circle": "Reflection & Worldview",
+      "level_title": "Public infrastructure",
+      "statement": "φ7 (Infrastructure: public framework). A durable verification and guarantee regime as shared, credible, fair infrastructure — the difference between a pause and a peace."
+    },
+    {
+      "id": "tau.7",
+      "symbol": "tau",
+      "greek": "τ",
+      "ring": 7,
+      "circle": "Reflection & Worldview",
+      "level_title": "Ecological practice",
+      "statement": "τ7 (Worldview: scientific social practice). Peace reframed as continuously implemented practice within a coherent worldview — society, nature, technology and values understood as interdependent."
+    },
+    {
+      "id": "omega.7",
+      "symbol": "omega",
+      "greek": "Ω",
+      "ring": 7,
+      "circle": "Reflection & Worldview",
+      "level_title": "Collective future",
+      "statement": "Ω7 (Worldview: limits, order, collective future). Whether institutions, law and memory can learn faster than weapons — and, second-order, how this war's feedback revises the worldview of those who study it."
+    }
+  ],
+  "interactions": [
+    {
+      "pair": [
+        "alpha",
+        "beta"
+      ],
+      "type": "tension",
+      "loadBearing": true,
+      "finding": "Coalition purposes split: US deal-closure vs Israel's Lebanon campaign — the 7 June Beirut strike made this tension kinetic"
+    },
+    {
+      "pair": [
+        "alpha",
+        "chi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "Regime-change aim empirically defeated by nine-day succession, yet persists rhetorically"
+    },
+    {
+      "pair": [
+        "alpha",
+        "pi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "Decapitation theory falsified; the purpose it served survives without a validated theory of victory"
+    },
+    {
+      "pair": [
+        "alpha",
+        "deltapsi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "Maximalist purpose statements regenerate the change pressure that prevents war termination"
+    },
+    {
+      "pair": [
+        "alpha",
+        "phi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "The deal defers both sides' stated purposes into a 60-day annex — unresolved aims as time bombs"
+    },
+    {
+      "pair": [
+        "alpha",
+        "tau"
+      ],
+      "type": "tension",
+      "loadBearing": true,
+      "finding": "Mojtaba's signature: implementing a coerced deal as his first sovereign act — sign and risk legitimacy, or refuse and risk war"
+    },
+    {
+      "pair": [
+        "alpha",
+        "omega"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "Unmeasurable war aims: every party can claim victory, none can be held accountable"
+    },
+    {
+      "pair": [
+        "beta",
+        "chi"
+      ],
+      "type": "tension",
+      "loadBearing": true,
+      "finding": "The structure's apex is an information black hole: deal hinges on an unverified, wounded, invisible leader"
+    },
+    {
+      "pair": [
+        "beta",
+        "pi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "IRGC strikes on US bases during the deal endgame contradict the unified-command assumption of every coercion model"
+    },
+    {
+      "pair": [
+        "beta",
+        "deltapsi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "The war strengthened the structures most resistant to its aims: succession consolidated hardline control"
+    },
+    {
+      "pair": [
+        "beta",
+        "phi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "The bilateral deal structurally excludes Israel — the Lebanon front remains outside the peace"
+    },
+    {
+      "pair": [
+        "beta",
+        "tau"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "Gulf host states absorb retaliation while hosting US bases: an unpriced implementation dependency"
+    },
+    {
+      "pair": [
+        "beta",
+        "omega"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "Iran conditions IAEA safeguards on security guarantees — the feedback organ held hostage by its object"
+    },
+    {
+      "pair": [
+        "chi",
+        "deltapsi"
+      ],
+      "type": "tension",
+      "loadBearing": true,
+      "finding": "The HEU epistemic vacuum is escalatory fuel: any unverifiable claim of uranium movement can justify strikes"
+    },
+    {
+      "pair": [
+        "chi",
+        "pi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "The 'no breakout route' assessment rests on an irreversibly broken verification baseline — low decision-weight"
+    },
+    {
+      "pair": [
+        "chi",
+        "phi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "The 60-day technical talks require inventory facts that nobody can currently verify"
+    },
+    {
+      "pair": [
+        "chi",
+        "tau"
+      ],
+      "type": "reinforcement",
+      "loadBearing": false,
+      "finding": "Shipping transit counts are the cleanest implementation metric: zero on 12 June vs ~138/day prewar"
+    },
+    {
+      "pair": [
+        "chi",
+        "omega"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "Casualty feedback propaganda-contested at >2x divergence; radiation monitoring the only uncontested channel"
+    },
+    {
+      "pair": [
+        "deltapsi",
+        "pi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "Escalate-to-negotiate 'worked' — validating force-first doctrine as a template for the next crisis anywhere"
+    },
+    {
+      "pair": [
+        "deltapsi",
+        "phi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "The deal is forged by the pressure it should relieve: remove the pressure and the signature incentive weakens"
+    },
+    {
+      "pair": [
+        "deltapsi",
+        "tau"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "99+ days of Hormuz closure: urgency that both enables the deal and tempts desperate moves"
+    },
+    {
+      "pair": [
+        "deltapsi",
+        "omega"
+      ],
+      "type": "tension",
+      "loadBearing": true,
+      "finding": "Doom loop: the IAEA cannot return while strikes continue, and strikes continue because nothing can be verified"
+    },
+    {
+      "pair": [
+        "pi",
+        "phi"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "A signature would 'confirm' coercive diplomacy while its hardest test — the deferred nuclear core — has not begun"
+    },
+    {
+      "pair": [
+        "pi",
+        "tau"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "The 30-day shipping clause is theory-clean; mines, insurance and crew confidence say 60-90 days"
+    },
+    {
+      "pair": [
+        "pi",
+        "omega"
+      ],
+      "type": "tension",
+      "loadBearing": false,
+      "finding": "No post-JCPOA theory of verification exists; the 60-day talks must invent one from scratch"
+    },
+    {
+      "pair": [
+        "phi",
+        "tau"
+      ],
+      "type": "tension",
+      "loadBearing": true,
+      "finding": "MoU is not implementation: sanctions-for-steps sequencing is historically where such deals die"
+    },
+    {
+      "pair": [
+        "phi",
+        "omega"
+      ],
+      "type": "tension",
+      "loadBearing": true,
+      "finding": "The draft names no verification mechanism — a deal that cannot observe its own compliance defaults to mutual accusation"
+    },
+    {
+      "pair": [
+        "tau",
+        "omega"
+      ],
+      "type": "reinforcement",
+      "loadBearing": false,
+      "finding": "Every implementation milestone is paired with an observable indicator and a pre-agreed trigger"
+    }
+  ],
+  "unifyExample": {
+    "comment": "Worked unify(S, J, C) -> R per the Unification Axiom. S = this document.",
+    "J": {
+      "naturalLanguage": "Does the candidate contain a de-escalation off-ramp that is viable and implementable within 6 months?",
+      "filter": {
+        "symbols": [
+          "phi",
+          "tau",
+          "omega"
+        ],
+        "minRing": 3,
+        "targetRing": 5
+      }
+    },
+    "C": {
+      "type": "content-object",
+      "title": "Draft US-Iran memorandum of understanding (as reported 12 June 2026)",
+      "content": [
+        "Immediate reopening of the Strait of Hormuz without tolls",
+        "Restoration of prewar shipping within ~30 days",
+        "Phased lifting of sanctions and release of frozen assets (~$24B per Iranian state-linked claim)",
+        "60-day period of technical negotiations covering nuclear and ballistic programs",
+        "Pakistan-mediated; signature pending approval of Iran's Supreme Leader"
+      ]
+    },
+    "R": {
+      "verdict": "partially-satisfies",
+      "interpretation": {
+        "alpha": {
+          "assessment": "satisfies",
+          "why": "Dual-victory architecture: both leaderships can narrate success from the same text - the precondition for any signature"
+        },
+        "pi": {
+          "assessment": "partial",
+          "why": "Embodies coercive-diplomacy theory but launches without any post-JCPOA verification theory behind its hardest component"
+        },
+        "chi": {
+          "assessment": "at-risk",
+          "why": "Built on unverifiable inventories (440.9 kg HEU unaccounted); must generate its own knowledge base before claims escalate"
+        },
+        "deltapsi": {
+          "assessment": "satisfies",
+          "why": "Converts 99 days of blockade pressure into a signature incentive inside a concrete window"
+        },
+        "beta": {
+          "assessment": "partial",
+          "why": "Bilateral: excludes Israel, leaving the Lebanon front as an external kill switch; hinges on one unverified leader"
+        },
+        "phi": {
+          "assessment": "satisfies",
+          "why": "Concrete off-ramp instruments exist: reopening, phased relief, asset release, structured 60-day track - reaches ring 5 (adaptation)"
+        },
+        "tau": {
+          "assessment": "partial",
+          "why": "The 30-day shipping clause is unimplementable as written (realistic: 60-90 days); the sequencing annex - where such deals die - is unpublished"
+        },
+        "omega": {
+          "assessment": "fails",
+          "why": "No named verification mechanism: the deal cannot observe its own compliance - stuck at ring 3 (tension visible, unresolved)"
+        }
+      },
+      "ringProfile": {
+        "phi": 5,
+        "tau": 4,
+        "omega": 3
+      },
+      "conclusion": "The candidate IS a viable 6-month off-ramp on its phi and deltapsi roles, conditional on two repairs surfaced by the omega and beta readings: name a verification mechanism with IAEA re-entry as first milestone, and decouple the Lebanon front explicitly. Without these, the same analysis predicts failure modes phi-omega (compliance by accusation) and alpha-beta (kill switch detonation).",
+      "confidence": "medium-high; degrades with distance from 2026-06-13"
+    }
+  }
+}

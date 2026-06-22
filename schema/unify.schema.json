@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://goodreason.fi/schemas/unify.schema.json",
+  "title": "GoodReason unify(S, J, C) -> R query/result",
+  "description": "Schema for the Unification Axiom of the SuperGoodReasonModel. A unify object pairs a condition J and a candidate C with a structured per-symbol result R, interpreted through the model S. Validates both standalone *.unify.json files and the `unifyExample` block embedded in an application instance.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["J", "C", "R"],
+  "properties": {
+    "comment": { "type": "string" },
+    "J": { "$ref": "#/$defs/condition" },
+    "C": { "$ref": "#/$defs/candidate" },
+    "R": { "$ref": "#/$defs/result" }
+  },
+  "$defs": {
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "symbolId": {
+      "type": "string",
+      "description": "Symbol in id-form (matches the model's node id prefixes).",
+      "enum": ["alpha", "pi", "chi", "deltapsi", "beta", "phi", "tau", "omega"]
+    },
+    "ring": { "type": "integer", "minimum": 1, "maximum": 7 },
+    "condition": {
+      "type": "object",
+      "description": "J — the question put to the model, optionally focused by a filter.",
+      "additionalProperties": false,
+      "required": ["naturalLanguage"],
+      "properties": {
+        "naturalLanguage": { "$ref": "#/$defs/nonEmptyString" },
+        "filter": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "symbols": {
+              "type": "array",
+              "description": "Symbols the question primarily concerns. R must still assess all 8 (balance rule).",
+              "items": { "$ref": "#/$defs/symbolId" },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "minRing": { "$ref": "#/$defs/ring" },
+            "targetRing": { "$ref": "#/$defs/ring" }
+          }
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "description": "C — the object being judged against J through the model.",
+      "additionalProperties": false,
+      "required": ["title"],
+      "properties": {
+        "type": { "$ref": "#/$defs/nonEmptyString" },
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "content": {
+          "anyOf": [
+            { "$ref": "#/$defs/nonEmptyString" },
+            { "type": "array", "items": { "$ref": "#/$defs/nonEmptyString" }, "minItems": 1 }
+          ]
+        },
+        "source": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "perSymbolVerdict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assessment", "why"],
+      "properties": {
+        "assessment": {
+          "type": "string",
+          "enum": ["satisfies", "partial", "at-risk", "fails"]
+        },
+        "why": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "result": {
+      "type": "object",
+      "description": "R — the structured interpretation: an overall verdict plus a reason per symbol, not a keyword match.",
+      "additionalProperties": false,
+      "required": ["verdict", "interpretation", "conclusion"],
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": ["satisfies", "partially-satisfies", "fails", "unverifiable"]
+        },
+        "interpretation": {
+          "type": "object",
+          "description": "One verdict per symbol — all 8 required, honoring the GoodReason balance rule that no role stays unexamined.",
+          "additionalProperties": false,
+          "required": ["alpha", "pi", "chi", "deltapsi", "beta", "phi", "tau", "omega"],
+          "properties": {
+            "alpha": { "$ref": "#/$defs/perSymbolVerdict" },
+            "pi": { "$ref": "#/$defs/perSymbolVerdict" },
+            "chi": { "$ref": "#/$defs/perSymbolVerdict" },
+            "deltapsi": { "$ref": "#/$defs/perSymbolVerdict" },
+            "beta": { "$ref": "#/$defs/perSymbolVerdict" },
+            "phi": { "$ref": "#/$defs/perSymbolVerdict" },
+            "tau": { "$ref": "#/$defs/perSymbolVerdict" },
+            "omega": { "$ref": "#/$defs/perSymbolVerdict" }
+          }
+        },
+        "ringProfile": {
+          "type": "object",
+          "description": "Optional: the ring depth reached on key symbols (id-form key -> ring 1-7).",
+          "additionalProperties": false,
+          "properties": {
+            "alpha": { "$ref": "#/$defs/ring" },
+            "pi": { "$ref": "#/$defs/ring" },
+            "chi": { "$ref": "#/$defs/ring" },
+            "deltapsi": { "$ref": "#/$defs/ring" },
+            "beta": { "$ref": "#/$defs/ring" },
+            "phi": { "$ref": "#/$defs/ring" },
+            "tau": { "$ref": "#/$defs/ring" },
+            "omega": { "$ref": "#/$defs/ring" }
+          }
+        },
+        "conclusion": { "$ref": "#/$defs/nonEmptyString" },
+        "confidence": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    }
+  }
+}
